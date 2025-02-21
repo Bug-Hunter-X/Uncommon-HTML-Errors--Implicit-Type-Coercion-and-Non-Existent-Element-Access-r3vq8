@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    // Correct way to add a number and a string in HTML
+    document.getElementById("myDiv").innerHTML += String(10) + "px"; 
+    
+    //Check if the element exists before trying to access it
+    const element = document.getElementById("nonExistentElement");
+    if (element) {
+      element.innerHTML = "Hello";
+    } else {
+      console.error("Element with id 'nonExistentElement' not found.");
+      // Optionally, handle the error gracefully, e.g., create the element dynamically.
+    }
+  </script>
+</body>
+</html>
