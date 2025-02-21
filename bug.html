@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    //This will throw an error because you are trying to add a number to a string without explicitly converting the number to a string
+    document.getElementById("myDiv").innerHTML += 10 + "px"; 
+    
+    // This is also an uncommon error. It could happen if the element you are trying to access doesn't exist on the page
+     document.getElementById("nonExistentElement").innerHTML = "Hello";
+  </script>
+</body>
+</html>
