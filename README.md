@@ -1,0 +1,1 @@
+This repository demonstrates two uncommon errors that can occur in HTML.  The first error involves implicit type coercion when concatenating a number and a string. The second error involves attempting to access a DOM element that does not exist in the current HTML structure.  The `bug.html` file contains the erroneous code, while `bugSolution.html` provides the corrected version.
